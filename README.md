@@ -92,7 +92,7 @@ open http://localhost:5001
 ```shell
 docker login
 ```
-- because I used to authenticated so it will my tokens
+- because I used to authenticated so it will use my existing tokens
 ```shell
 # output
 Authenticating with existing credentials...
