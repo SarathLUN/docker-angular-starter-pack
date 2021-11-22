@@ -84,7 +84,9 @@ CONTAINER ID   IMAGE                             COMMAND                  CREATE
 ```shell
 open http://localhost:5001
 ```
-![](doc-assets/Screen Shot 2021-11-22 at 9.41.09 PM.png)
+
+![angular-starter-pack](doc-assets/Screen Shot 2021-11-22 at 9.41.09 PM.png)
+
 # Push docker image to docker hub
 - login to your docker hub account
 ```shell
@@ -117,8 +119,10 @@ latest: digest: sha256:78ebfe2a5936029bf880bf52e4eb1f74d665ad378283326266409b5fe
 ```
 - now check on docker hub
 - here we [go](https://hub.docker.com/repository/docker/tonysarath/angular-starter-pack)
-![](doc-assets/Screen Shot 2021-11-22 at 9.49.15 PM.png)
-![](doc-assets/Screen Shot 2021-11-22 at 9.53.20 PM.png)
+
+![angular-starter-pack-docker-hub-1](doc-assets/Screen Shot 2021-11-22 at 9.49.15 PM.png)
+
+![angular-starter-pack-docker-hub-2](doc-assets/Screen Shot 2021-11-22 at 9.53.20 PM.png)
 
 ---
 
@@ -132,7 +136,9 @@ latest: digest: sha256:78ebfe2a5936029bf880bf52e4eb1f74d665ad378283326266409b5fe
 - so I changed the page title of this file `src/index.html`
 - and changed content of this file `src/app/app.component.html`
 - the result of application turn to this
-![](doc-assets/Screen Shot 2021-11-22 at 10.07.50 PM.png)
+
+![changed-1](doc-assets/Screen Shot 2021-11-22 at 10.07.50 PM.png)
+
 - now build image and run the container
 ```shell
 docker stop angular-starter-pack # stop current running container
@@ -141,7 +147,9 @@ docker build -t tonysarath/angular-starter-pack:latest . # build new image
 docker run -d -p 5001:80 --name angular-starter-pack tonysarath/angular-starter-pack:latest # run container again from new image
 open http://localhost:5001 # access our application
 ```
-![](doc-assets/Screen Shot 2021-11-22 at 10.22.54 PM.png)
+
+![changed-2](doc-assets/Screen Shot 2021-11-22 at 10.22.54 PM.png)
+
 - of course, we can always push our new image to docker hub.
 ```shell
 docker push tonysarath/angular-starter-pack:latest
