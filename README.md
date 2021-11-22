@@ -63,7 +63,7 @@ REPOSITORY                                                        TAG       IMAG
 tonysarath/angular-starter-pack                                   latest    f7155d0dc74d   2 minutes ago   23.4MB
 ```
 - let run this container test if it works
-- by default nginx will expose port 80, now I will NAT port 5000 of my localhost into port 80 of container 
+- by default nginx will expose port 80, now I will NAT port 5001 of my localhost into port 80 of container 
 ```shell
 docker run -d -p 5001:80 --name angular-starter-pack tonysarath/angular-starter-pack
 ```
